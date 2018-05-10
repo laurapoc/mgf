@@ -1,0 +1,115 @@
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v13/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lW4e5g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+	font-family:  Arial;
+	background-color: whitesmoke;
+	padding: 200px;
+	padding-top: 10px;
+	border: 30px solid; 
+	border-color: hsla(320, 50%, 20%, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: grid;
+  Grid-template: repeat(8, 100px, 500px) / repeat(5, 100px, 500px);
+  Grid-column-gap: 100px;
+  Grid-row-gap: 10px;
+  Justify-items: center;
+} 
+
+.heading {
+	Grid-area: 1 / 2 / span 1 / span 3;
+	text-align: center;
+}
+
+.pianoimage {
+	Grid-area: 2 / 2 / 2 / span 3;
+	background-image: url("http://pianominhthanh.vn/upload/image/digital-piano/sua-loi-dinh-phim-dan-piano-dien-jpg.jpg");
+	height: 120px;
+	width: 500px;
+	 background-repeat: no-repeat;
+}
+
+p.salt {
+	color: brown;
+	font-size: 14px;
+	text-align: right;
+	top: 72%;
+	width: 60%;
+	margin-left: 190px;
+	margin-top: 86px;
+	background-color: white;
+	opacity: 0.8;
+}
+
+.imageVilnius1 {
+	Grid-area: 2 / 1 / span 3/ span 1;
+	max-width: 200px;
+	max-height: 415px;
+	overflow: hidden;
+}
+
+.imageVilnius2 {
+	Grid-area: 2 / 5 / span 3 / span 1;
+	max-width: 200px;
+	max-height: 415px;
+	overflow: hidden;
+	text-indent: -100%;
+}
+
+.photo {
+	Grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.contact {
+	Grid-area: 3 / 3 / span  1 / span 1;
+}
+
+.registration {
+	Grid-area: 3 / 4 / span 1 / span 1;
+}
+
+.intro {
+	Grid-area: 4 / 2 / span 1 / span 3;
+	font-size-adjust: 0.53;
+	font-weight: bold;
+	background: hsla(20, 23%, 20%, 1);
+	text-align: center;
+	color: white;
+	line-height: 1.5;
+	padding: 20px;
+	font-family: "Playfair Display", playfairdisplay;
+	word-spacing: 10px;
+	letter-spacing: 0.1em;
+}
+
+.nav {
+	Grid-area: 5 / 1 / span 1 / span 5;
+	justify-self: start;
+}
+
+#introduction {
+	Grid-area: 6 / 1 / span 1 / span 5;
+	justify-self: start;
+}
+
+#history {
+	Grid-area: 7 / 1 / span 1 / span 5;
+	justify-self: start;
+}
+
+#contactMe {
+	Grid-area: 8 / 1 / span 1 / span 5;
+	justify-self: start;
+}
